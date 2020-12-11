@@ -33,9 +33,9 @@ $ yarn globall add expo-cli
 ```bash
 $ git clone https://github.com/fernandosev/tictac-toe-frontend-mobile.git
 $ cd tictac-toe-frontend-mobile
-$ yarn start
-# expo start
-# npm start
+$ yarn
+# npm install
+$ expo start
 ```
 
 3. Altere a base_url do servidor em src/services/api
