@@ -10,6 +10,8 @@ import {
   getStatusSuccess,
   moveFailure,
   moveSuccess,
+  restartFailure,
+  restartSuccess,
 } from "./actions";
 
 export function* getStatus() {
@@ -50,8 +52,22 @@ export function* move({ payload }) {
   }
 }
 
+export function* restart({ payload }) {
+  try {
+    const response = yield call(api.get, `/tictactoe/init`);
+
+    yield put(getStatusRequest());
+    yield put(getBoardRequest());
+
+    yield put(restartSuccess());
+  } catch (err) {
+    yield put(restartFailure());
+  }
+}
+
 export default all([
   takeLatest("@game/GET_STATUS_REQUEST", getStatus),
   takeLatest("@game/GET_BOARD_REQUEST", getBoard),
   takeLatest("@game/MOVE_REQUEST", move),
+  takeLatest("@game/RESTART_REQUEST", restart),
 ]);
