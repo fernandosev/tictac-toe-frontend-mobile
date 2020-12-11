@@ -11,6 +11,7 @@ export default function Square({
   side = 40,
   background = colors.primaryColor,
   color = colors.black,
+  ...props
 }) {
   return (
     <Container
@@ -20,6 +21,7 @@ export default function Square({
       borderTop={borderTop}
       background={background}
       side={side}
+      {...props}
     >
       <Content color={color}>{value}</Content>
     </Container>

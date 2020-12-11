@@ -14,7 +14,7 @@ Frontend do jogo da velha utilizando React Native + Expo
 
 ## Pré Requisitos
 
-- NodeJS 12 LTS (recomendado) ou superior
+- NodeJS 12.x.x ou superior
 - Yarn (recomendado)
 - VSCode (recomendado)
 
