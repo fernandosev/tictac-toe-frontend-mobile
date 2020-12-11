@@ -29,13 +29,16 @@ $ yarn globall add expo-cli
 
 1.  Baixe o app Expo na loja de aplicativos do seu smartphone
 2.  Inicie o projeto no computador:
-3. Altere a base_url do servidor em src/services/api
 
 ```bash
+$ git clone https://github.com/fernandosev/tictac-toe-frontend-mobile.git
 $ cd tictac-toe-frontend-mobile
 $ yarn start
+# expo start
 # npm start
 ```
+
+3. Altere a base_url do servidor em src/services/api
 4.  A página do servidor expo deverá abrir no seu navegador
 5.  Certifique-se de que seu smartphone e seu computador estejam conectados na mesma rede
 6.  No app Expo, no seu smartphone, abra o leitor de QR Code e leia o QR Code do app no navegador
