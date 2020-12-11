@@ -6,10 +6,7 @@ Frontend do jogo da velha utilizando React Native + Expo
 
 - [Pré-requisitos](#pré-requisitos)
 - [Instalando o Expo CLI](#instalando-o-expo-cli)
-- [Criando o projeto](#criando-o-projeto)
 - [Rodando o projeto com seu dispositivo móvel](#rodando-o-projeto-com-seu-dispositivo-móvel)
-- [Criando a estrutura do projeto](#Criando-a-estrutura-do-projeto)
-- [Instalando as bibliotecas](#instalando-as-bibliotecas)
 - [Autor](#autor)
 
 ## Pré Requisitos
@@ -26,12 +23,6 @@ Frontend do jogo da velha utilizando React Native + Expo
 $ yarn globall add expo-cli
 # npm install -g expo-cli
 
-```
-
-## Criando o projeto
-
-```bash
-$ expo init tictac-toe-frontend-mobile
 ```
 
 ## Rodando o projeto com seu dispositivo móvel
